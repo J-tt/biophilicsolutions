@@ -1,5 +1,7 @@
 # Biophilic Solutions
 
+This is a plain website very much under construction, made haphazardly for a friend.
+
 This is the open source website for https://biophilic.solutions.
 
 Code is licensed under MIT, content (displayed text, any mention of biophilic solutions) is copyright.
