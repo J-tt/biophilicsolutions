@@ -9,87 +9,131 @@
   <body>
     <div class="wrapper">
       <h1>Biophilic<br>Solutions</h1>
-      <p>Coming Soon</p>
+      <h2><a href="#services">Services</a>, <a href="#contact">Contact</a></h2>
+      <h2></h2>
     </div>
+    <section id="services" class="services">
+      <h1>Services</h1>
+      <div class="flex-services-container">
+        <div class="flex-service">
+          <h3>Design Consultancy and Project Management</h3>
+          <p>Our diverse team of professionals ensure a quality wholistic approach.</p>
+          <ul>
+            <li>Architecture</li>
+            <li>Urban design and planning</li>
+            <li>Streetscapes</li>
+            <li>Office spaces</li>
+            <li>Community consultation</li>
+            <li>Landscape design</li>
+          </ul>
+        </div>
+        <div class="flex-service">
+          <h3>Nature Pods</h3>
+          <p>a deep and immersive nature experience in the city to sit and be restored in.</p>
+          <ul>
+            <li>City squares, roof tops, podiums</li>
+            <li>Combines multiple biophilic attributes</li>
+            <li>Restorative and de-stressing </li>
+            <li>Biosolar rooftop provides own power</li>
+            <li>5m x 5m temporary or permanent</li>
+            <li> Sustainably built and operated.</li>
+          </ul>
+        </div>
+        <div class="flex-service">
+          <h3>Creative Nature Installations</h3>
+	  <p>for office, home or garden</p>
+          <ul>
+            <li>Bringing nature in all forms and shapes</li>
+            <li>Office foyers</li>
+            <li>Homes inside and out</li>
+            <li>Connecting the built and the natural</li>
+            <li>Provides a ‘daily dose’ of nature</li>
+            <li>Beautiful</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div id="contact" class="wrapper about-section">
+      <h1>Contact</h1>
+      <h2><a href="mailto:contact@biophilic.solutions">email</a></h2>
+    </section>
   </body>
   <style>
-body,html {
-  height: 100%;
-  font-family: sans-serif;
-}
-h1 {
-  font-size: 180px;
-  margin-bottom: 0;
-}
-p {
-  margin-top: 0;
-  font-size: 60px;
-}
-.wrapper {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  justify-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-body,html {
-  height: 100%;
-  font-family: sans-serif;
-}
-h1 {
-  font-size: 180px;
-  margin-bottom: 0;
-}
-p {
-  margin-top: 0;
-  font-size: 60px;
-}
-.wrapper {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  justify-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-  @media (max-width: 1064px) {
-    h1 {
-      font-size: 180;
+    body,html {
+      height: 100%;
+      font-family: sans-serif;
     }
-  }
-  @media (max-width: 850px) {
     h1 {
-      font-size: 100px;
+      font-size: 180px;
+      margin-bottom: 0;
     }
-  }
-  @media (max-width: 475px) {
-    h1 {
-      font-size: 72px;
-    }
-    p {
-      font-size: 40px;
-    }
-  }
-  @media (max-width: 330px) {
-    h1 {
+    h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
       font-size: 60px;
     }
-    p {
-      font-size: 30px;
+    a {
+      color: black!important;
     }
-  }
+    .section-title {
+      font-size: 80px;
+      text-align: center;
+    }
+    .content {
+      text-align: center;
+    }
+    .wrapper {
+      min-height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      justify-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .flex-services-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+    .flex-service > h3 {
+      align-text: center;
+      font-size: 1.5em;
+    }
+    @media (max-width: 1064px) {
+      h1 {
+        font-size: 180;
+      }
+    }
+    @media (max-width: 850px) {
+      h1 {
+        font-size: 100px;
+      }
+    }
+    @media (max-width: 475px) {
+      h1 {
+        font-size: 72px;
+      }
+      h2 {
+        font-size: 40h2x;
+      }
+    }
+    @media (max-width: 330h2x) {
+      h1 {
+        font-size: 60h2x;
+      }
+      h2 {
+        font-size: 30h2x;
+      }
+    }
   </style>
+  <script>
+    /* smooth-scroll.js v1.3.1 */
+    (function(e,t){"use strict";var n=0,r=500,i=15,s=document.getElementsByTagName("a"),o;for(var u=0;u<s.length;u++){o=s[u].attributes.href===t?null:s[u].attributes.href.nodeValue.toString();if(o!==null&&o.length>1&&o.indexOf("#")!=-1){s[u].onclick=function(){var n,s=this.attributes.href.nodeValue.toString(),o=s.substr(0,s.indexOf("#")),u=s.substr(s.indexOf("#")+1);if(n=document.getElementById(u)){var l=(r-r%i)/i,c=f(),h=(a(n)-c)/l;if(e.history&&typeof e.history.pushState=="function")e.history.pushState({},t,o+"#"+u);for(var p=1;p<=l;p++){(function(){var t=h*p;setTimeout(function(){e.scrollTo(0,t+c)},i*p)})()}return false}}}}var a=function(e){var r=n*-1;while(e.offsetParent!=t&&e.offsetParent!=null){r+=e.offsetTop+(e.clientTop!=null?e.clientTop:0);e=e.offsetParent}return r};var f=function(){return e.pageYOffset!==t?e.pageYOffset:document.documentElement.scrollTop!==t?document.documentElement.scrollTop:document.body.scrollTop}})(window)
+  </script>
 </html>
